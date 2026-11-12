@@ -3,29 +3,24 @@
 using namespace std;
 
 int main() {
-    int matriz[3][3];
+    int vector[3];
     int suma = 0;
 
     // Ingresar datos
     for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; j++) {
-            cout << "Ingrese un numero: ";
-            cin >> matriz[i][j];
-        }
+        cout << "Ingrese un numero: ";
+        cin >> vector[i];
     }
 
-    // Mostrar matriz
-    cout << "\nMatriz ingresada:\n";
+    // Mostrar vector
+    cout << "\nVector ingresado:\n";
 
     for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; j++) {
-            cout << matriz[i][j] << "\t";
-            suma += matriz[i][j];
-        }
-        cout << endl;
+        cout << vector[i] << "\t";
+        suma += vector[i];
     }
 
-    cout << "\nLa suma total es: " << suma << endl;
+    cout << "\n\nLa suma total es: " << suma << endl;
 
     return 0;
 }
